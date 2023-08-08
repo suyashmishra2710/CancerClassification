@@ -1,1 +1,3 @@
 # CancerClassification
+
+This project takes in text diagnoses of three different types of cancers (Thyroid, Lung, and Colon cancers) and creates a superivsed learning classification model in the form of a random forest. The random forest model uses the text as features to try and classify each cancer correctly. To prepare the text, a bag of words model is used to vectorize the text into numbers. Afterwards, TruncatedSVD is used to reduce the dimensionality of the text data while removing linear correlation between various words. Finally, the remaining features are standardized and put through a random forest model with a maximum depth of 10 levels. Cross-validation on the dataset reported a mean accuracy of approximately 93 percent, indicating effectiveness. 
